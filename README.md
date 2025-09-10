@@ -57,7 +57,7 @@ Notes
 - If Metro bundling fails, try clearing cache: `npm start -- --reset-cache`.
 
 API & security
-- The OpenAI API key must only live on the backend (`backend/.env`). The frontend never contains secrets — it only calls `POST /plan`.
+- The OpenAI API key must only live on the backend (`backend/.env`). The frontend does not contains secrets — it only calls `POST /plan`.
 - Frontend resolves the server base URL at runtime from Expo extras (`EXPO_PUBLIC_API_BASE_URL`) or falls back to `http://localhost:8787`.
 
 Tests
