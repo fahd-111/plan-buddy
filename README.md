@@ -1,4 +1,4 @@
-# Mobile App — PlanBuddy
+# PlanBuddy
 
 This repository is a small Expo + Node prototype that generates structured task plans using OpenAI and persists them locally.
 
@@ -26,7 +26,7 @@ How to run (Windows PowerShell)
 1) Backend
 
 ```powershell
-cd "d:\Mobile App\backend"
+cd "d:\plan-buddy\backend"
 npm install
 # create .env with OPENAI_API_KEY and optional PORT
 # Example .env:
@@ -41,7 +41,7 @@ Watch server console for incoming requests and logs.
 2) Frontend (Expo)
 
 ```powershell
-cd "d:\Mobile App\frontend"
+cd "d:\plan-buddy\frontend"
 # Choose the base URL your app should call. Examples:
 # iOS simulator: http://localhost:8787
 # Android emulator: http://10.0.2.2:8787
@@ -64,7 +64,7 @@ Tests
 - Run unit tests (logic-only Jest tests):
 
 ```powershell
-cd "d:\Mobile App\frontend"
+cd "d:\plan-buddy\frontend"
 npm test
 ```
 
