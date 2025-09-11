@@ -13,10 +13,10 @@ if (Platform.OS === 'android' && BASE.includes('localhost')) {
     BASE = BASE.replace('localhost', '10.0.2.2');
 }
 
-export async function createPlan(goal: string, timeHorizon: 'today' | 'week') {
+export async function createPlan(goal: string, horizon: 'today' | 'week') {
     try {
         const url = `${BASE}/plan`;
-        const body = { goal, timeHorizon };
+        const body = { goal, horizon };
         console.log('createPlan POST', url, body);
         const resp = await fetch(url, {
             method: 'POST',
